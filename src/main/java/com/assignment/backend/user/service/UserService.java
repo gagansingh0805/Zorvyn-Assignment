@@ -1,7 +1,9 @@
 package com.assignment.backend.user.service;
 
 
+import com.assignment.backend.user.enums.Role;
 import com.assignment.backend.user.enums.UserStatus;
+import com.assignment.backend.user.exception.UserNotFoundException;
 import com.assignment.backend.user.model.User;
 import com.assignment.backend.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -26,15 +28,20 @@ public class UserService {
     }
 
     public User updateUserStatus(Long id, UserStatus status) {
-        User user = userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+        User user = getUserById(id);
 
         user.setStatus(status);
         return userRepository.save(user);
     }
 
+    public User updateUserRole(Long id, Role role) {
+        User user = getUserById(id);
+        user.setRole(role);
+        return userRepository.save(user);
+    }
+
     public User getUserById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
     }
 }

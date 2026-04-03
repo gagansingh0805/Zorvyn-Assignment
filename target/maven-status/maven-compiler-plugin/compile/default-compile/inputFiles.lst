@@ -1,5 +1,10 @@
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/ZorvynAssignmentApplication.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/auth/config/SecurityConfig.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/auth/filter/HeaderUserAuthenticationFilter.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/dashboard/controller/DashboardController.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/dashboard/dto/response/DashboardSummaryResponseDTO.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/dashboard/dto/response/TrendPointDTO.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/dashboard/service/DashboardService.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/controller/RecordController.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/dto/request/RecordRequestDTO.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/dto/response/RecordResponseDTO.java
@@ -12,8 +17,15 @@
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/repository/RecordRepository.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/service/RecordService.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/record/specification/RecordSpecification.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/config/UserSeeder.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/controller/UserController.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/dto/request/UserCreateRequestDTO.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/dto/request/UserRoleUpdateRequestDTO.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/dto/request/UserStatusUpdateRequestDTO.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/dto/response/UserResponseDTO.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/enums/Role.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/enums/UserStatus.java
+/Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/exception/UserNotFoundException.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/model/User.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/repository/UserRepository.java
 /Users/akashpratapsingh/Desktop/Gagan/Codes/Spring Boot Applications/zorvyn-assignment/src/main/java/com/assignment/backend/user/service/UserService.java

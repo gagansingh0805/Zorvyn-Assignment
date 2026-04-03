@@ -64,11 +64,12 @@ public class RecordService {
         recordRepository.deleteById(id);
     }
 
-    public List<RecordResponseDTO> filterRecords(
+    public Page<RecordResponseDTO> filterRecords(
             RecordType type,
             String category,
             LocalDate start,
-            LocalDate end
+            LocalDate end,
+            Pageable pageable
     ) {
         log.info("Filtering records type={}, category={}, start={}, end={}", type, category, start, end);
 
@@ -93,8 +94,7 @@ public class RecordService {
             specification = specification.and(RecordSpecification.dateBetween(start, end));
         }
 
-        return recordRepository.findAll(specification).stream()
-                .map(RecordMapper::toDTO)
-                .toList();
+        return recordRepository.findAll(specification, pageable)
+                .map(RecordMapper::toDTO);
     }
 }

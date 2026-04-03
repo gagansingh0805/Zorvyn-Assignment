@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import jakarta.validation.Valid;
 import java.time.LocalDate;
-import java.util.List;
 
 @RestController
 @RequestMapping("/records")
@@ -58,13 +57,14 @@ public class RecordController {
 
 
     @GetMapping("/filter")
-    public ResponseEntity<List<RecordResponseDTO>> filterRecords(
+    public ResponseEntity<Page<RecordResponseDTO>> filterRecords(
             @RequestParam(required = false) RecordType type,
             @RequestParam(required = false) String category,
             @RequestParam(required = false) LocalDate start,
-            @RequestParam(required = false) LocalDate end
+            @RequestParam(required = false) LocalDate end,
+            Pageable pageable
     ) {
         return ResponseEntity.status(HttpStatus.OK)
-                .body(recordService.filterRecords(type, category, start, end));
+                .body(recordService.filterRecords(type, category, start, end, pageable));
     }
 }
