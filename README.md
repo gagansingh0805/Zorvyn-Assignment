@@ -32,6 +32,9 @@ Roles are enforced at the endpoint level:
 - ANALYST: can read records and dashboard summaries
 - ADMIN: full access to records and users
 
+Public registration:
+- `POST /auth/register` creates a user with role VIEWER by default.
+
 ## API Overview
 
 ### Users (ADMIN only)
@@ -40,6 +43,9 @@ Roles are enforced at the endpoint level:
 - `GET /users/{id}`
 - `PATCH /users/{id}/status`
 - `PATCH /users/{id}/role`
+
+### Auth (public)
+- `POST /auth/register`
 
 ### Records
 - `POST /records` (ADMIN)

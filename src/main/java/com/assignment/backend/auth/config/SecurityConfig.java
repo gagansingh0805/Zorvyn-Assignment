@@ -23,7 +23,7 @@ public class SecurityConfig {
                 .csrf(c -> c.disable())
                 .addFilterBefore(headerUserAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(a -> a
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/health").permitAll()
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/health", "/auth/register").permitAll()
                         .requestMatchers(HttpMethod.POST, "/users").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.PATCH, "/users/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.GET, "/users/**").hasRole("ADMIN")
